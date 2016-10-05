@@ -1,10 +1,21 @@
 /**
  * Created by thomas on 05/10/16.
  */
-import {Component} from "@angular/core/src/metadata/directives";
+import { Component } from '@angular/core';
 @Component({
-  selector:"my-app"
-})
-export class AppComponent{
+  selector: 'my-app',
+  template: `
+  <h1>{{title}}</h1>
+  <nav>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+  </nav>
+  <router-outlet></router-outlet>
+`,
+  styleUrls: ['app/app.component.css'],
 
+
+})
+export class AppComponent {
+  title = 'Tour of Heroes';
 }
