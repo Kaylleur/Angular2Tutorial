@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
-
+/**
+ * Created by thomas on 05/10/16.
+ */
+import {Component} from "@angular/core/src/metadata/directives";
 @Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular App</h1>'
+  selector:"my-app"
 })
-export class AppComponent { }
+export class AppComponent{
+
+}
