@@ -1,0 +1,30 @@
+<md-sidenav-layout>
+  <md-sidenav #start mode="over">
+    <md-toolbar color="primary">
+      <span>
+        <button md-icon-button (click)="start.toggle()" ><md-icon class="material-icons">keyboard_arrow_left</md-icon></button>
+        Back
+      </span>
+    </md-toolbar>
+
+  </md-sidenav>
+
+  <div md-sidenav-content>
+    <div class="container">
+      <h1>{{title}}
+      <button md-mini-fab color="primary" (click)="start.toggle()" aria-label="Settings">
+        <md-icon>dehaze</md-icon>
+      </button>
+        </h1>
+      <nav>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+        <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+      </nav>
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+
+</md-sidenav-layout>
+
+
